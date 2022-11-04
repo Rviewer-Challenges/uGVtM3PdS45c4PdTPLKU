@@ -7,7 +7,7 @@
   </div>
 
 <div align="center">
-<img src="public/image-01.png" alt="Unit converter app" width="400"  />
+
 <img src="public/image-02.png" alt="Unit converter app" width="400"  />
 </div>
 
@@ -15,16 +15,17 @@
 
 This app has a main view that includes 4 components:
 
-- A TabGroup : this component renders a tab and a tab panel for each type of conversion and group them all
-- An InputField: used for submiting the number to convert and to display the converted data
-- A SelectInput: that shows all the disponibles units for a conversion type
-- Footer
+- A TabGroup : this component inlcudes the tabs element, where each conversion type has a tab and a tab panel. This is the main component of the app, because is the one that handle the unit conversion
 
-The value of each unit to make the conversions is stored in the [unit.tsx](src/units/unit.tsx) file, where an array of objects includes all the types of conversion an the units for each one, with the unit name and the unit value.
+- An InputField: used for submiting the number to convert and to display the converted data
+
+- A SelectInput: used to display all the disponibles units to convert from and to
+
+- Footer with a link to the app repo in github
+
+The value for each unit to make the conversions is stored in the [unit.tsx](src/units/unit.tsx) file, where an array of objects includes all the availables types of conversion an the units for each one, with the unit name and the unit value.
 
 The [converter.tsx](src/converter.tsx) file includes three helper functions that are used inside the TabGroup component to get the result for the conversion.
-
-The values for each unit to make the conversions are stored in the [unit.tsx](src/units/unit.tsx) file, where an array of objects includes all the types of conversion an the units for each one.
 
 ## Installation
 
