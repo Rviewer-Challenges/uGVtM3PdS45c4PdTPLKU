@@ -68,7 +68,7 @@ const TabGroup: React.FC<IProps> = ({ setColor }) => {
   }, [to, from, numberToConvert]);
 
   return (
-    <div className="converter">
+    <div className="converter" data-testid="converter">
       <Tabs>
         <TabList style={{ border: "none", margin: 0, zIndex: 0 }}>
           {units.map((u) => (

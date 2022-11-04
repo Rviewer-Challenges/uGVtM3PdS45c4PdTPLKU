@@ -5,4 +5,7 @@ test("renders App", () => {
   render(<App />);
   const title = screen.getAllByText("Unit Converter");
   expect(title).toHaveLength(2);
+
+  const converter = screen.getByTestId("converter");
+  expect(converter).toBeInTheDocument();
 });
