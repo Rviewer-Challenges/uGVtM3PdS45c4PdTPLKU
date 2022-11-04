@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import "./mixins";
+@import "./variables";
+.App {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.converter {
+  font-family: "Pacifico", cursive;
+  &__title {
+    margin: 0;
+    padding-top: 1rem;
+
+    h1,
+    h4 {
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    @include sm {
+      display: flex;
+      flex-flow: nowrap;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+  }
+
+  &__input,
+  &__results {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.footer {
+  padding: 3%;
+  font-size: 0.9rem;
+}
